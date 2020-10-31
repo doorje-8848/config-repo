@@ -1,6 +1,6 @@
 spring:
   application:
-    name: doorje-gateway
+    name: gateway
   cloud:
     gateway:
       discovery:
