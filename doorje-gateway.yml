@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: doorje-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          
+ eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://doorje-discovery:8761/eureka}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
